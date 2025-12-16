@@ -24,7 +24,7 @@ homework_claude_front/
 │   ├── Design-Tokens.md        - CSS 변수 규약
 │   └── Diff-Template.md        - 버전 변경 기록
 │
-├── 📁 wireframe/               ← AI Studio 실험 (v0.1 배치됨)
+├── 📁 ai-studio/               ← Google AI Studio 코드 (v0.1)
 │
 ├── 📁 src/                     ← 개발 코드 (확정)
 │
@@ -40,7 +40,7 @@ homework_claude_front/
 ```
 1. IDEATION (Google AI Studio)     → 실험, 자유롭게
         ↓ 다운로드
-2. STAGING (wireframe/)            → 검토, 논의
+2. STAGING (ai-studio/)            → 검토, 논의
         ↓ 버전 확정
 3. DOCUMENTATION (docs/)           → Diff 작성, 계약서 업데이트
         ↓ 개발 시작
@@ -80,5 +80,5 @@ homework_claude_front/
 
 ## Current Status (현재 상태)
 
-- **v0.1**: wireframe/ 폴더에 배치 완료 ✅
+- **v0.1**: ai-studio/ 폴더에 배치 완료 ✅
 - **Next**: src/ 개발 시작

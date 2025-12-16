@@ -89,7 +89,7 @@ fix/*           ← IDE 버그 수정
 ### 1. AI Studio에서 새 스타일 실험
 ```bash
 # AI Studio에서 작업 후 다운로드
-# wireframe/ 폴더에 배치
+# ai-studio/ 폴더에 배치
 # 브랜치 생성
 git checkout -b lab/aistudio-20251216-style1
 git add src/styles src/ui

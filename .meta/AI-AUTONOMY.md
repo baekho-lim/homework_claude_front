@@ -11,7 +11,7 @@
 
 | Area (영역) | Autonomy (자율성) | Reason (근거) |
 |-------------|-------------------|---------------|
-| `wireframe/` | 🟢 Free (자유) | 실험 공간, 언제든 덮어쓰기 |
+| `ai-studio/` | 🟢 Free (자유) | 실험 공간, 언제든 덮어쓰기 |
 | `src/ui/` | 🟡 Suggest → Execute (제안→실행) | UI는 유연하게 |
 | `src/styles/` | 🟡 Suggest → Execute (제안→실행) | 스타일은 유연하게 |
 | `src/content/` | 🟡 Suggest → Execute (제안→실행) | 콘텐츠는 유연하게 |
@@ -36,7 +36,7 @@
 
 ### 🟢 자유 영역
 ```
-User: "wireframe 폴더에 새 실험 넣어줘"
+User: "ai-studio 폴더에 새 실험 넣어줘"
 AI: (바로 실행) → "완료했습니다"
 ```
 
