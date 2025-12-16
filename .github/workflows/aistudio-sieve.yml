@@ -1,0 +1,57 @@
+name: aistudio-sieve
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  sieve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Block non-UI changes from lab/aistudio-* branches
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          HEAD_REF="${{ github.head_ref }}"
+          echo "Head ref: $HEAD_REF"
+
+          # Only enforce for AI Studio lab branches
+          if [[ "$HEAD_REF" != lab/aistudio-* ]]; then
+            echo "Not an AI Studio lab branch. Skipping sieve."
+            exit 0
+          fi
+
+          BASE_SHA="${{ github.event.pull_request.base.sha }}"
+          HEAD_SHA="${{ github.event.pull_request.head.sha }}"
+
+          echo "Base SHA: $BASE_SHA"
+          echo "Head SHA: $HEAD_SHA"
+
+          # List changed files
+          CHANGED_FILES=$(git diff --name-only "$BASE_SHA" "$HEAD_SHA" || true)
+          echo "$CHANGED_FILES"
+
+          # Allowlist paths (only these can change)
+          ALLOWED_REGEX='^(docs/|src/ui/|src/styles/|src/content/|src/fixtures/|\.github/)'
+
+          DISALLOWED=0
+          while IFS= read -r f; do
+            [[ -z "$f" ]] && continue
+            if [[ ! "$f" =~ $ALLOWED_REGEX ]]; then
+              echo "::error file=$f::Disallowed change from AI Studio lab branch. Allowed: docs/, src/ui/, src/styles/, src/content/, src/fixtures/, .github/"
+              DISALLOWED=1
+            fi
+          done <<< "$CHANGED_FILES"
+
+          if [[ "$DISALLOWED" -eq 1 ]]; then
+            echo "❌ SIEVE FAILED: AI Studio branch attempted to modify core files."
+            exit 1
+          fi
+
+          echo "✅ SIEVE PASSED: only allowed paths modified."
