@@ -16,6 +16,7 @@ homework_claude_front/
 ├── 📁 .meta/                   ← 업무 메타 (복사 가능)
 │   ├── DOC-PRINCIPLES.md       - 문서 작성 원칙
 │   ├── AI-AUTONOMY.md          - AI 자율성 매트릭스
+│   ├── WORKFLOW.md             - Lab↔Prod 운영 방식
 │   └── README.md               - 메타 폴더 설명
 │
 ├── 📁 docs/                    ← 프로젝트 문서 (계약서)
@@ -56,6 +57,7 @@ homework_claude_front/
 |------------|----------------|
 | [DOC-PRINCIPLES](.meta/DOC-PRINCIPLES.md) | 문서 작성 원칙 |
 | [AI-AUTONOMY](.meta/AI-AUTONOMY.md) | AI 자율성 매트릭스 |
+| [WORKFLOW](.meta/WORKFLOW.md) | Lab↔Prod 운영 방식 |
 
 ### Project (프로젝트)
 | Doc (문서) | Purpose (용도) |

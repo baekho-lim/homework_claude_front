@@ -9,6 +9,7 @@
 |-------------|----------------|
 | `DOC-PRINCIPLES.md` | 문서 작성 원칙 |
 | `AI-AUTONOMY.md` | AI 자율성 매트릭스 |
+| `WORKFLOW.md` | Lab↔Prod 운영 방식 |
 | `README.md` | 이 파일 |
 
 ---
