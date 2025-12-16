@@ -1,0 +1,53 @@
+/**
+ * Homework Design Tokens
+ * AI Studio Pack에서 가져오는 토큰 파일
+ */
+
+:root {
+  /* Colors */
+  --hw-bg: #FAFAFA;       /* Zinc 50 - 앱 배경 */
+  --hw-fg: #27272A;       /* Zinc 800 - 주 텍스트 */
+  --hw-muted: #A1A1AA;    /* Zinc 400 - 보조 텍스트 */
+  --hw-accent: #52525B;   /* Zinc 600 - 포인트 */
+  --hw-border: #E4E4E7;   /* Zinc 200 - 테두리 */
+
+  /* Spacing */
+  --hw-space-1: 4px;
+  --hw-space-2: 8px;
+  --hw-space-3: 16px;
+  --hw-space-4: 24px;
+  --hw-space-5: 32px;
+
+  /* Radius */
+  --hw-radius-s: 8px;
+  --hw-radius-m: 16px;
+  --hw-radius-lg: 24px;
+
+  /* Typography */
+  --hw-font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Base styles */
+body {
+  background-color: var(--hw-bg);
+  color: var(--hw-fg);
+  font-family: var(--hw-font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom utility classes mapping to tokens */
+.bg-hw-bg { background-color: var(--hw-bg); }
+.text-hw-fg { color: var(--hw-fg); }
+.text-hw-muted { color: var(--hw-muted); }
+.text-hw-accent { color: var(--hw-accent); }
+.border-hw-border { border-color: var(--hw-border); }
+.rounded-hw-lg { border-radius: var(--hw-radius-lg); }
+
+/* Hide scrollbar for clean UI */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

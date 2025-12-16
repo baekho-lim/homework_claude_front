@@ -1,0 +1,32 @@
+{
+  "_comment": "AI Studio Pack - 목데이터 (placeholder)",
+  "proofs": [
+    {
+      "id": "mock-001",
+      "goal": "블로그 글 초안 쓰기",
+      "date": "2025-01-15T10:30:00.000Z",
+      "durationMinutes": 30,
+      "reflection": "생각보다 술술 써졌다",
+      "templateId": "A",
+      "status": "success"
+    },
+    {
+      "id": "mock-002",
+      "goal": "운동 루틴 정리",
+      "date": "2025-01-14T09:00:00.000Z",
+      "durationMinutes": 25,
+      "reflection": null,
+      "templateId": "B",
+      "status": "success"
+    },
+    {
+      "id": "mock-003",
+      "goal": "이메일 정리",
+      "date": "2025-01-13T14:00:00.000Z",
+      "durationMinutes": 15,
+      "reflection": "중간에 멈췄지만 괜찮아",
+      "templateId": "A",
+      "status": "abandoned"
+    }
+  ]
+}

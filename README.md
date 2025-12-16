@@ -1,4 +1,4 @@
-# OVERVIEW (관제센터) — Homework (Wing Proof)
+# README (관제센터) — Homework (Wing Proof)
 > 프로젝트 전체 구조와 문서 링크 허브
 
 - Status (상태): Active
@@ -11,13 +11,12 @@
 ```
 homework_claude_front/
 │
-├── 📋 OVERVIEW.md              ← 지금 보고 있는 문서
+├── 📋 README.md                ← 지금 보고 있는 문서
 │
 ├── 📁 .meta/                   ← 업무 메타 (복사 가능)
 │   ├── DOC-PRINCIPLES.md       - 문서 작성 원칙
 │   ├── AI-AUTONOMY.md          - AI 자율성 매트릭스
-│   ├── WORKFLOW.md             - Lab↔Prod 운영 방식
-│   └── README.md               - 메타 폴더 설명
+│   └── WORKFLOW.md             - Lab↔Prod 운영 방식
 │
 ├── 📁 docs/                    ← 프로젝트 문서 (계약서)
 │   ├── PRD-lite.md             - 제품 요구사항
@@ -25,7 +24,7 @@ homework_claude_front/
 │   ├── Design-Tokens.md        - CSS 변수 규약
 │   └── Diff-Template.md        - 버전 변경 기록
 │
-├── 📁 wireframe/               ← AI Studio 실험 (동적)
+├── 📁 wireframe/               ← AI Studio 실험 (v0.1 배치됨)
 │
 ├── 📁 src/                     ← 개발 코드 (확정)
 │
@@ -81,5 +80,5 @@ homework_claude_front/
 
 ## Current Status (현재 상태)
 
-- **v0.1**: Google AI Studio 기능 루프 완주 ✅
-- **Next**: wireframe/ 폴더에 v0.1 배치 → src/ 개발 시작
+- **v0.1**: wireframe/ 폴더에 배치 완료 ✅
+- **Next**: src/ 개발 시작

@@ -1,26 +1,20 @@
-# Wireframe (Google AI Studio)
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-## 용도
-Google AI Studio에서 만든 실험적 코드를 다운로드하는 공간
+# Run and deploy your AI Studio app
 
-## 상태
-- **동적**: 계속 변경됨
-- **실험용**: 아직 확정되지 않은 기획/디자인
+This contains everything you need to run your app locally.
 
-## 워크플로우
-```
-Google AI Studio (실험)
-        ↓
-    다운로드 → 이 폴더에 덮어쓰기
-        ↓
-    기획 검토 & 수정
-        ↓
-    버전 확정 시 → docs/Diff-Template.md 작성
-        ↓
-    IDE에서 실제 개발 (src/)
-```
+View your app in AI Studio: https://ai.studio/apps/drive/1wEeaPcuY5158TyW812DxptaX9hM3aASd
 
-## 주의
-- 이 폴더는 **작업 공간**입니다
-- 확정된 코드는 `src/`로 이동합니다
-- 버전이 찍히면 브랜치로 보관합니다
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

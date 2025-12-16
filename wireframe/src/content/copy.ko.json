@@ -1,0 +1,38 @@
+{
+  "_comment": "AI Studio Pack - 카피 키 (placeholder)",
+  "screens": {
+    "S01_GoalStart": {
+      "title": "한 줄이면 충분해요.",
+      "placeholder": "오늘 뭘 해볼까요?",
+      "cta": "30분, 지금 시작하기"
+    },
+    "S02_TimerRunning": {
+      "pause": "잠깐 멈추기",
+      "resume": "다시 시작하기"
+    },
+    "S03_PauseSheet": {
+      "title": "멈춰도 괜찮아요.",
+      "subtitle": "숨 고르기예요.",
+      "resume": "다시 시작하기",
+      "abandon": "오늘은 여기까지"
+    },
+    "S04_CompleteProof": {
+      "title": "오늘의 날개가 붙었습니다.",
+      "reflectionPlaceholder": "오늘 어땠나요? (선택)",
+      "cta": "기록 남기기"
+    },
+    "S05_ShareExport": {
+      "title": "증명 카드",
+      "subtitle": "자랑이 아니라, '노력이 있었다'는 기록이에요.",
+      "templateImage": "이미지 포함",
+      "templateText": "텍스트만",
+      "cta": "이미지로 저장하기"
+    },
+    "S06_QuietLog": {
+      "title": "기록",
+      "empty": "아직 기록이 없어요.",
+      "emptySubtitle": "첫 30분을 시작해볼까요?",
+      "cta": "다시 시작하기"
+    }
+  }
+}
