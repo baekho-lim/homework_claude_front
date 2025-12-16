@@ -38,13 +38,13 @@ jobs:
           echo "$CHANGED_FILES"
 
           # Allowlist paths (only these can change)
-          ALLOWED_REGEX='^(docs/|src/ui/|src/styles/|src/content/|src/fixtures/|\.github/)'
+          ALLOWED_REGEX='^(docs/|src/pages/|src/ui/|src/styles/|src/content/|src/fixtures/|\.github/)'
 
           DISALLOWED=0
           while IFS= read -r f; do
             [[ -z "$f" ]] && continue
             if [[ ! "$f" =~ $ALLOWED_REGEX ]]; then
-              echo "::error file=$f::Disallowed change from AI Studio lab branch. Allowed: docs/, src/ui/, src/styles/, src/content/, src/fixtures/, .github/"
+              echo "::error file=$f::Disallowed change from AI Studio lab branch. Allowed: docs/, src/pages/, src/ui/, src/styles/, src/content/, src/fixtures/, .github/"
               DISALLOWED=1
             fi
           done <<< "$CHANGED_FILES"

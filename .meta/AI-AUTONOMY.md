@@ -12,12 +12,15 @@
 | Area (영역) | Autonomy (자율성) | Reason (근거) |
 |-------------|-------------------|---------------|
 | `ai-studio/` | 🟢 Free (자유) | 실험 공간, 언제든 덮어쓰기 |
+| `src/pages/` | 🟡 Suggest → Execute (제안→실행) | 화면 단위, UI와 동일 |
 | `src/ui/` | 🟡 Suggest → Execute (제안→실행) | UI는 유연하게 |
 | `src/styles/` | 🟡 Suggest → Execute (제안→실행) | 스타일은 유연하게 |
 | `src/content/` | 🟡 Suggest → Execute (제안→실행) | 콘텐츠는 유연하게 |
+| `src/fixtures/` | 🟡 Suggest → Execute (제안→실행) | 목업 데이터는 유연하게 |
+| `src/contracts/` | 🔴 Approval Required (승인 필수) | 타입/스키마 규약 |
+| `src/core/` | 🔴 Approval Required (승인 필수) | 핵심 로직 |
 | `docs/Contracts.md` | 🔴 Approval Required (승인 필수) | 불변 규약 |
 | `docs/PRD-lite.md` | 🔴 Approval Required (승인 필수) | 제품 범위 |
-| `src/core/` | 🔴 Approval Required (승인 필수) | 핵심 로직 |
 | `.meta/` | 🔴 Approval Required (승인 필수) | 업무 방식 |
 
 ---
